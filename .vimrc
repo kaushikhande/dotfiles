@@ -15,12 +15,14 @@ set modelines=0
 
 " Automatically wrap text that extends beyond the screen length.
 set wrap
-" Vim's auto indentation feature does not work properly with text copied from outside of Vim. Press the <F2> key to toggle paste mode on/off.
+" Vim's auto indentation feature does not work properly with text copied from
+" outside of Vim. Press the <F2> key to toggle paste mode on/off.
 nnoremap <F2> :set invpaste paste?<CR>
 imap <F2> <C-O>:set invpaste paste?<CR>
 set pastetoggle=<F2>
 
-" Uncomment below to set the max textwidth. Use a value corresponding to the width of your screen.
+" Uncomment below to set the max textwidth. Use a value corresponding to the
+" width of your screen.
 " set textwidth=79
 set formatoptions=tcqrn1
 set tabstop=2
@@ -70,7 +72,8 @@ set ignorecase
 " Include only uppercase words with uppercase search term
 set smartcase
 
-" Store info from no more than 100 files at a time, 9999 lines of text, 100kb of data. Useful for copying large amounts of data between files.
+" Store info from no more than 100 files at a time, 9999 lines of text, 100kb
+" of data. Useful for copying large amounts of data between files.
 " set viminfo='100,<9999,s100
 
 " Map the <Space> key to toggle a selected fold opened/closed.
@@ -110,6 +113,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'morhetz/gruvbox'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'tpope/vim-surround'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
